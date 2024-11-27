@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //buat array untuk menampung nama stok
+        let stock = [];
+
+        //menentukan jumlah perulangan sebanyak jumlah
+        let jumlah = parseInt(
+            prompt("Masukkan jumlah stock")
+        );
+        
+        //memasukkan nama barang sesuai dengan variabel jumlah
+        for(let i = 1; i <= jumlah; i++){
+            let nama_stock = prompt('Masukkan nama barang ke-' + (i));
+            stock.push(nama_stock);
+        }
+
+        //mengubah stock ke tabel
+        console.table(stock);
+    </script>
+</body>
+</html>

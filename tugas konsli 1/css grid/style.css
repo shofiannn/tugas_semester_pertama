@@ -1,0 +1,118 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 300px 1fr 70px 300px;
+    grid-template-rows: 100px 50px 500px 240px 50px;
+    grid-template-areas:    'header main menu item5'
+                            'search main menu item5'
+                            'navbar main menu item6'
+                            'navbar main menu item6'
+                            'option main menu item6';
+                            gap: 10px;
+}
+
+@media (max-width : 1280px){
+    .parent{
+        display: grid;
+        grid-template-areas: 
+        'header main menu'
+        'search main menu'
+        'navbar main menu'
+        'option main menu';
+        grid-template-columns: 300px 2fr 300px;
+        grid-template-rows: 100px 50px 750px 50px;
+        gap: 10px;
+    }
+    .item5, .item6{
+        display: none;
+    }
+}
+
+@media (max-width : 1023px) {
+    .parent{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 450px;
+        grid-template-rows: 80px 850px 50px;
+        grid-template-areas: 
+        'header'
+        'main'
+        'navbar';
+        gap: 10px;
+    }
+
+    .search, .option, .menu, .item6, .item5{
+        display: none;
+    }
+}
+
+@media (max-width : 640px) {
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 860px 50px;
+        grid-template-areas: 
+        'header'
+        'main'
+        'navbar';
+    }
+}
+
+.header{
+    background-color: antiquewhite;
+    grid-area: header;
+    text-align: center;
+    font-size: 40px;
+}
+
+.navbar{
+    background-color: aqua;
+    grid-area: navbar;
+    text-align: center;
+    font-size: 40px;
+}
+
+.search{
+    background-color: aquamarine;
+    grid-area: search;
+    text-align: center;
+    font-size: 40px;
+}
+
+.option{
+    background-color: azure;
+    grid-area: option;
+    text-align: center;
+    font-size: 40px;
+}
+
+.main{
+    background-color: beige;
+    grid-area: main;
+    text-align: center;
+    font-size: 40px;
+}
+
+.menu{
+    background-color: blue;
+    grid-area: menu;
+    text-align: center;
+    font-size: 30px;
+}
+
+.item5{
+    background-color: blueviolet;
+    grid-area: item5;
+    text-align: center;
+    font-size: 40px;
+}
+
+.item6{
+    background-color: brown;
+    grid-area: item6;
+    text-align: center;
+    font-size: 40px;
+}

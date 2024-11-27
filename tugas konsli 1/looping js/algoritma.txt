@@ -1,0 +1,20 @@
+Algoritma Program
+
+1. Inisialisasi Array:
+
+- Buat array kosong bernama stock untuk menyimpan nama-nama stok barang.
+
+2. Input Jumlah Stok:
+
+- Ambil input dari pengguna berupa jumlah stok yang ingin dimasukkan. Gunakan fungsi prompt untuk meminta input dari pengguna.
+- Konversi input tersebut dari string ke tipe data integer menggunakan parseInt.
+
+3. Pengisian Nama Barang:
+
+- Lakukan perulangan dari 1 hingga jumlah stok yang telah dimasukkan oleh pengguna.
+- Pada setiap iterasi perulangan, ambil input nama barang dari pengguna menggunakan prompt.
+- Masukkan nama barang yang diperoleh ke dalam array stock menggunakan metode push.
+
+4. Menampilkan Tabel Stok:
+
+- Setelah perulangan selesai, tampilkan isi array stock dalam bentuk tabel menggunakan fungsi console.table.

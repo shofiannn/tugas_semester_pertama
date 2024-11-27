@@ -1,0 +1,57 @@
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.konsli{
+    background-color: orange;
+}
+
+.pai{
+    background-color: green;
+}
+
+.bing{
+    background-color: blue;
+}
+
+.bindo{
+    background-color: red;
+}
+
+.sejarah{
+    background-color: lightsalmon;
+}
+
+.pp{
+    background-color: hotpink;
+}
+
+.mtk{
+    background-color: rgb(217, 7, 7);
+}
+
+.bjawa{
+    background-color: brown;
+}
+
+.pkk{
+    background-color: gray;
+}
+
+.bk{
+    background-color: cyan;
+}
+
+.pjok{
+    background-color: lightgray;
+}
+
+.mapil{
+    background-color: lightskyblue;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Javascript</title>
+</head>
+<body>
+    <script>
+        let tahun = prompt("Masukkan tahun : ");
+
+        // if(tahun){
+        tahun = parseInt(tahun);
+        // }else{
+        //  console.warn("Peringatan!!! Silahkan mengulang lagi");
+        // }
+
+        if(isNaN(tahun)){
+            console.warn("Peringatan!!! Silahkan mengulang lagi")
+        }else if(tahun % 4 == 0){
+            console.log(tahun, " Tahun Kabisat")
+        }else{
+            console.log(tahun," Bukan Tahun Kabisat")
+        }
+    </script>
+</body>
+</html>

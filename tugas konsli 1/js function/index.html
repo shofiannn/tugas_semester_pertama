@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nilai = prompt(`
+        Pilih jenis konversi (1/2/3/4) : 
+        1. Rupiah ke Dolar
+        2. Dolar ke Rupiah 
+        3. Rupiah ke Yen
+        4. Yen ke Rupiah
+        `);
+
+        if(nilai == '1'){
+            let nominal = parseInt(prompt('Masukkan nominal uang Anda (Rupiah ke Dolar) : '));
+            function rupiahToDolar(nominal){
+                nominal *= 0.000065;
+                let rounded = Math.round(nominal)
+                console.log(`${rounded}$`)
+            }
+            rupiahToDolar(nominal);
+        }else if(nilai == '2'){
+            let nominal = parseInt(prompt('Masukkan nominal uang Anda (Dolar ke Rupiah) : '));
+            function dolarToRupiah(nominal){
+                nominal *= 15.48655;
+                console.log(`Rp ${nominal}`);
+            }
+            dolarToRupiah(nominal);
+        }else if(nilai == '3'){
+            let nominal = parseInt(prompt('Masukkan nominal uang Anda (Rupiah ke Yen) : '));
+            function rupiahToYen(nominal){
+                nominal *= 0.0093;
+                let rounded = Math.round(nominal);
+                console.log(`${rounded} Yen`);
+            }
+            rupiahToYen(nominal);
+        }else if(nilai == '4'){
+            let nominal = parseInt(prompt('Masukkan nominal uang Anda (Yen ke Rupiah) : '));
+            function yenToRupiah(nominal){
+                nominal *= 107.03;
+                console.log(`Rp${nominal}`);
+            }
+            yenToRupiah(nominal);
+        }else{
+            alert('Silahkan ulang lagi');
+        }
+    </script>
+</body>
+</html>
